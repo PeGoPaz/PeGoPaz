@@ -14,3 +14,37 @@ Here are some ideas to get you started:
 - 😄 Pronouns: ...
 - ⚡ Fun fact: ...
 -->
+# Hi, I'm Vladimir 👋
+
+### 👨‍💻 About Me
+Software Engineer with a focus on backend development and modern web applications.
+I enjoy building reliable systems, working with data, and exploring scalable architectures.
+
+---
+
+### 🚀 What I Work On
+* 🖥️ **Windows 95 Web Portfolio**
+  A React-based portfolio styled as a retro Windows 95 OS (using React95), with plans to evolve into a website builder.
+* 📅 **BePro – Appointment Booking Platform**
+  Full-stack MERN application for managing bookings and schedules.
+* 🏨 **Hotel Booking App**
+  Web application focused on reservation management and user experience.
+
+---
+
+### 🛠️ Tech Stack
+* **Languages:** Java, JavaScript, Python, SQL
+* **Frontend:** React, Next.js, HTML, CSS
+* **Backend:** Node.js, REST APIs
+* **Databases:** MySQL, PostgreSQL
+* **Tools:** Git, Docker, Linux, Bash
+
+---
+
+### 📫 How to Reach Me
+* LinkedIn: linkedin.com/in/pegopaz
+* GitHub: github.com/PeGoPaz
+
+---
+
+⭐ Always open to collaboration and new opportunities.
