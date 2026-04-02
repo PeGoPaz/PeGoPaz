@@ -25,7 +25,7 @@ I enjoy building reliable systems, working with data, and exploring scalable arc
   A React-based portfolio styled as a retro Windows 95 OS (using React95), with plans to evolve into a website builder.
 * 📅 **BePro – Appointment Booking Platform**
   Full-stack MERN application for managing bookings and schedules.
-* 🏨 **Hotel Booking App**
+* 🏨 **Villa Caterina Hotel Booking App**
   Web application focused on reservation management and user experience.
 
 ---
