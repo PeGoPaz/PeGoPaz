@@ -41,7 +41,6 @@ I enjoy building reliable systems, working with data, and exploring scalable arc
 
 ### 📫 How to Reach Me
 * LinkedIn: linkedin.com/in/pegopaz
-* GitHub: github.com/PeGoPaz
 
 ---
 
