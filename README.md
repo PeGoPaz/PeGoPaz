@@ -1,7 +1,6 @@
 # 💫 About Me:
 Hi👋,<br>👨‍💻 About Me<br>Software Engineer with a focus on backend development and modern web applications. I enjoy building reliable systems, working with data, and exploring scalable architectures.<br><br>🚀 What I Work On<br>    🖥️ Windows 95 Web Portfolio A React-based portfolio styled as a retro Windows 95 OS (using React95), with plans to evolve into a website builder.<br>    📅 BePro – Appointment Booking Platform Full-stack MERN application for managing bookings and schedules.<br>    🏨 Villa Caterina Hotel Booking App Web application focused on reservation management and user experience.<br><br>⭐ Always open to collaboration and new opportunities.
 
-
 ## 🌐 Socials:
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-%230077B5.svg?logo=linkedin&logoColor=white)](https://linkedin.com/in/pegopaz) [![email](https://img.shields.io/badge/Email-D14836?logo=gmail&logoColor=white)](mailto:vl.rai@proton.me) 
 
@@ -11,8 +10,3 @@ Hi👋,<br>👨‍💻 About Me<br>Software Engineer with a focus on backend dev
 ![](https://github-readme-stats.shion.dev/api?username=PeGoPaz&theme=dark&hide_border=false&include_all_commits=true&count_private=true)<br/>
 ![](https://streak-stats.demolab.com/?user=PeGoPaz&theme=dark&hide_border=false)<br/>
 ![](https://github-readme-stats.shion.dev/api/top-langs/?username=PeGoPaz&theme=dark&hide_border=false&include_all_commits=true&count_private=true&layout=compact)
-
-## 🏆 GitHub Trophies
-![](https://github-profile-trophy.vercel.app/?username=PeGoPaz&theme=radical&no-frame=false&no-bg=false&margin-w=4)
-
-<!-- Proudly created with GPRM ( https://gprm.itsvg.in ) -->
