@@ -1,47 +1,18 @@
-<!--
-**PeGoPaz/PeGoPaz** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
+# 💫 About Me:
+Hi👋,<br>👨‍💻 About Me<br>Software Engineer with a focus on backend development and modern web applications. I enjoy building reliable systems, working with data, and exploring scalable architectures.<br><br>🚀 What I Work On<br>    🖥️ Windows 95 Web Portfolio A React-based portfolio styled as a retro Windows 95 OS (using React95), with plans to evolve into a website builder.<br>    📅 BePro – Appointment Booking Platform Full-stack MERN application for managing bookings and schedules.<br>    🏨 Villa Caterina Hotel Booking App Web application focused on reservation management and user experience.<br><br>⭐ Always open to collaboration and new opportunities.
 
-Here are some ideas to get you started:
 
-- 🔭 I’m currently working on ...
-- 🌱 I’m currently learning ...
-- 👯 I’m looking to collaborate on ...
-- 🤔 I’m looking for help with ...
-- 💬 Ask me about ...
-- 📫 How to reach me: ...
-- 😄 Pronouns: ...
-- ⚡ Fun fact: ...
--->
-# Hi, I'm Vladimir 👋
+## 🌐 Socials:
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-%230077B5.svg?logo=linkedin&logoColor=white)](https://linkedin.com/in/pegopaz) [![email](https://img.shields.io/badge/Email-D14836?logo=gmail&logoColor=white)](mailto:vl.rai@proton.me) 
 
-### 👨‍💻 About Me
-Software Engineer with a focus on backend development and modern web applications.
-I enjoy building reliable systems, working with data, and exploring scalable architectures.
+# 💻 Tech Stack:
+![Java](https://img.shields.io/badge/java-%23ED8B00.svg?style=for-the-badge&logo=openjdk&logoColor=white) ![Python](https://img.shields.io/badge/python-3670A0?style=for-the-badge&logo=python&logoColor=ffdd54) ![MySQL](https://img.shields.io/badge/mysql-4479A1.svg?style=for-the-badge&logo=mysql&logoColor=white) ![MongoDB](https://img.shields.io/badge/MongoDB-%234ea94b.svg?style=for-the-badge&logo=mongodb&logoColor=white) ![React](https://img.shields.io/badge/react-%2320232a.svg?style=for-the-badge&logo=react&logoColor=%2361DAFB) ![HTML5](https://img.shields.io/badge/html5-%23E34F26.svg?style=for-the-badge&logo=html5&logoColor=white) ![Express.js](https://img.shields.io/badge/express.js-%23404d59.svg?style=for-the-badge&logo=express&logoColor=%2361DAFB) ![Postgres](https://img.shields.io/badge/postgres-%23316192.svg?style=for-the-badge&logo=postgresql&logoColor=white) ![Git](https://img.shields.io/badge/git-%23F05033.svg?style=for-the-badge&logo=git&logoColor=white) ![Docker](https://img.shields.io/badge/docker-%230db7ed.svg?style=for-the-badge&logo=docker&logoColor=white) ![Bash Script](https://img.shields.io/badge/bash_script-%23121011.svg?style=for-the-badge&logo=gnu-bash&logoColor=white)
+# 📊 GitHub Stats:
+![](https://github-readme-stats.shion.dev/api?username=PeGoPaz&theme=dark&hide_border=false&include_all_commits=true&count_private=true)<br/>
+![](https://streak-stats.demolab.com/?user=PeGoPaz&theme=dark&hide_border=false)<br/>
+![](https://github-readme-stats.shion.dev/api/top-langs/?username=PeGoPaz&theme=dark&hide_border=false&include_all_commits=true&count_private=true&layout=compact)
 
----
+## 🏆 GitHub Trophies
+![](https://github-profile-trophy.vercel.app/?username=PeGoPaz&theme=radical&no-frame=false&no-bg=false&margin-w=4)
 
-### 🚀 What I Work On
-* 🖥️ **Windows 95 Web Portfolio**
-  A React-based portfolio styled as a retro Windows 95 OS (using React95), with plans to evolve into a website builder.
-* 📅 **BePro – Appointment Booking Platform**
-  Full-stack MERN application for managing bookings and schedules.
-* 🏨 **Villa Caterina Hotel Booking App**
-  Web application focused on reservation management and user experience.
-
----
-
-### 🛠️ Tech Stack
-* **Languages:** Java, JavaScript, Python, SQL
-* **Frontend:** React, Next.js, HTML, CSS
-* **Backend:** Node.js, REST APIs
-* **Databases:** MySQL, PostgreSQL
-* **Tools:** Git, Docker, Linux, Bash
-
----
-
-### 📫 How to Reach Me
-* LinkedIn: linkedin.com/in/pegopaz
-
----
-
-⭐ Always open to collaboration and new opportunities.
+<!-- Proudly created with GPRM ( https://gprm.itsvg.in ) -->
