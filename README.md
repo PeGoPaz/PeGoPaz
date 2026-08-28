@@ -6,7 +6,7 @@
 
 ## About
 
-Software engineer with a focus on backend development, Linux systems, and infrastructure engineering. I design and build reliable server-side applications with an emphasis on clean architecture, maintainability, and scalability. My technical interests span the full deployment lifecycle — from service and API design through containerisation, process automation, and production system management.
+Software engineer with a focus on backend development, Linux systems, and infrastructure engineering. I design and build reliable server-side applications with an emphasis on clean architecture, maintainability, and scalability. My technical interests span the full deployment lifecycle - from service and API design through containerisation, process automation, and production system management.
 
 I am particularly drawn to **Linux-native development environments**, **backend architecture**, and **DevOps workflows** including CI/CD pipelines, container orchestration, and system configuration management.
 
