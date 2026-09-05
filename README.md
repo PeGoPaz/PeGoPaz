@@ -61,12 +61,6 @@ discovery by category, scheduling, reviews, and dashboards for both sides.
   Systems ........ Linux, Docker, SSH, shell scripting
 </pre>
 
-## Currently
-
-- Final year project - LLM-related, topic in progress.
-- Narrowing the booking platform into an Ireland-first marketplace for driving
-  instructors.
-
 ## Contact
 
 [vladr.tech](https://vladr.tech) · [linkedin.com/in/pegopaz](https://linkedin.com/in/pegopaz) · [vl.rai@proton.me](mailto:vl.rai@proton.me)
