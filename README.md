@@ -42,15 +42,24 @@ a desktop dashboard, a headless mode for servers and an optional C++ sampler.
 
 ### [Pro-me](https://github.com/PeGoPaz/Pro-me)
 
-`Node.js` `Express` `MongoDB` `Mongoose` `React` `Vite`
+`Node.js` `Express 5` `MongoDB` `Mongoose` `React 19` `Vite`
 
-Full-stack booking platform connecting customers with local service providers -
-discovery by category, scheduling, reviews, and dashboards for both sides.
+Marketplace for finding a driving instructor in Ireland. The RSA register says
+who is approved to teach; Pro.me helps learners choose between them.
 
-- REST API over Express with Mongoose schemas and route-level auth middleware.
-- Session auth backed by a MongoDB store, so sessions survive a restart.
-- Helmet, CORS, rate limiting and NoSQL injection sanitisation on by default.
-- Environment-based config, deployed to Render from `render.yaml`.
+- Reference data for all 26 counties and 62 driving test centres, imported from
+  the RSA's own register; search ranks verified instructors first and never by
+  self-reported lesson counts.
+- An onboarding wizard that saves every step, an admin queue for checking ADI
+  numbers, and EU Digital Services Act reporting: anyone can report a profile or
+  review, and a report cannot be closed without a statement of reasons.
+- Session auth in a MongoDB store, Helmet, bcrypt, and a NoSQL-injection
+  sanitiser written for Express 5, where express-mongo-sanitize turns every
+  request with a query string into a 500.
+- A login rate limit that counts only failed attempts - the first version
+  limited the whole auth router and signed people out after five page loads.
+- API and frontend served by one Render service in Frankfurt, so the session
+  cookie stays first-party and login works in Safari.
 
 ## Toolbox
 
