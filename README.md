@@ -21,19 +21,24 @@ where I work every day rather than a line on a list.
 ### [AI-GPU-Benchmark](https://github.com/PeGoPaz/AI-GPU-Benchmark)
 
 [![CI](https://github.com/PeGoPaz/AI-GPU-Benchmark/actions/workflows/ci.yml/badge.svg)](https://github.com/PeGoPaz/AI-GPU-Benchmark/actions/workflows/ci.yml)
+[![Release](https://img.shields.io/github/v/release/PeGoPaz/AI-GPU-Benchmark)](https://github.com/PeGoPaz/AI-GPU-Benchmark/releases)
 
-`Python` `PyQt6` `PyTorch` `Transformers` `PEFT` `NVML`
+`Python` `C++17` `PyTorch` `PEFT` `PyQt6` `NVML` `Prometheus` `Docker`
 
-Desktop tool that measures AI training throughput on NVIDIA cards. Runs a real
-LoRA fine-tune while polling the driver for temperature, power, VRAM and clocks,
-then plots the run and reports steps/sec and steps/sec/W.
+Benchmarks NVIDIA GPUs on a real LoRA fine-tune. It started as a way to tell
+whether my deshrouded RTX 4070 Ti actually ran cooler, and shipped as 0.1.0 with
+a desktop dashboard, a headless mode for servers and an optional C++ sampler.
 
-- Training and telemetry live on separate `QThread` workers, so the window stays
-  responsive and a run stops cleanly at a step boundary.
-- Warm-up steps are excluded from timing, and throughput comes from the steps that
-  actually completed - an early stop reports its real rate, not an inflated one.
-- The ML stack and NVML are stubbed in tests, so CI runs on a GPU-less runner.
-  Ruff, mypy and pytest on Python 3.10 and 3.13, with tooling pinned.
+- Throughput as tokens/sec and MFU against a peak computed from the card's
+  architecture, SM count and clock; energy per training step from NVML's
+  counter; a thermal model fitted to the temperature curve.
+- A C++17 extension samples board power at 500 Hz on its own thread outside the
+  GIL, through a lock-free ring buffer, tested under ASan, UBSan and TSan.
+- `--repeat` with outlier rejection, `--sweep` ranked by a Pareto front of speed
+  against efficiency, a Prometheus endpoint with a Grafana dashboard, a SQLite
+  history of every run and a CUDA container image.
+- Strict mypy and about 500 tests with Hypothesis and a 93% coverage floor, all
+  without a GPU; CI on Linux, Windows and macOS, releases built from version tags.
 
 ### [Pro-me](https://github.com/PeGoPaz/Pro-me)
 
@@ -50,14 +55,14 @@ discovery by category, scheduling, reviews, and dashboards for both sides.
 ## Toolbox
 
 <pre>
-  Languages ...... Python, JavaScript, Java, Bash, SQL
+  Languages ...... Python, JavaScript, C++, Java, Bash, SQL
   Backend ........ Node.js, Express, REST APIs, session auth, Mongoose
   Frontend ....... React, Vite, React Router, Context API, axios
   Databases ...... MongoDB, PostgreSQL, MySQL
-  ML / GPU ....... PyTorch, Transformers, PEFT/LoRA, mixed precision, NVML
-  Testing ........ pytest, dependency stubbing, headless Qt runs
-  Quality ........ ruff, mypy, pinned tooling, GitHub Actions
-  Systems ........ Linux, Docker, SSH, shell scripting
+  ML / GPU ....... PyTorch, Transformers, PEFT/LoRA, QLoRA, mixed precision, NVML
+  Testing ........ pytest, Hypothesis, dependency stubbing, ASan/UBSan/TSan
+  Quality ........ ruff, strict mypy, coverage floors, pinned tooling, GitHub Actions
+  Systems ........ Linux, Docker, Prometheus, Grafana, SSH, shell scripting
 </pre>
 
 ## Contact
