@@ -61,6 +61,26 @@ who is approved to teach; Pro.me helps learners choose between them.
 - API and frontend served by one Render service in Frankfurt, so the session
   cookie stays first-party and login works in Safari.
 
+### [property-template](https://github.com/PeGoPaz/property-template)
+
+[![CI](https://github.com/PeGoPaz/property-template/actions/workflows/ci.yml/badge.svg)](https://github.com/PeGoPaz/property-template/actions/workflows/ci.yml)
+
+`Python` `JavaScript` `GitHub Actions` `GitHub Pages`
+
+The code behind a client's holiday-rental site, turned into a template: a site
+for a similar property is set up by editing data files, not HTML.
+
+- Every page is generated from a property config, a reviews file and one text
+  file per language by a build that uses only Python's standard library.
+- The build refuses to ship mistakes: overlapping price seasons, a translation
+  missing a key, a review scored above its platform's scale or a link to a
+  script that does not exist all stop it with a message saying which.
+- Availability is merged from every platform's iCal feed; if one feed fails
+  nothing is written, so a missing platform cannot reopen booked dates.
+- CI tests, builds and deploys, and every six hours rebuilds with fresh
+  availability without a commit; script and style links carry a content hash
+  so a deploy never mixes old and new files.
+
 ## Toolbox
 
 <pre>
