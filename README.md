@@ -42,7 +42,9 @@ a desktop dashboard, a headless mode for servers and an optional C++ sampler.
 
 ### [Pro-me](https://github.com/PeGoPaz/Pro-me)
 
-`Node.js` `Express 5` `MongoDB` `Mongoose` `React 19` `Vite`
+[![CI](https://github.com/PeGoPaz/Pro-me/actions/workflows/ci.yml/badge.svg)](https://github.com/PeGoPaz/Pro-me/actions/workflows/ci.yml)
+
+`Node.js` `Express 5` `MongoDB` `Mongoose` `React 19` `Vite` `Cloudinary`
 
 Marketplace for finding a driving instructor in Ireland. The RSA register says
 who is approved to teach; Pro.me helps learners choose between them.
@@ -50,16 +52,21 @@ who is approved to teach; Pro.me helps learners choose between them.
 - Reference data for all 26 counties and 62 driving test centres, imported from
   the RSA's own register; search ranks verified instructors first and never by
   self-reported lesson counts.
-- An onboarding wizard that saves every step, an admin queue for checking ADI
-  numbers, and EU Digital Services Act reporting: anyone can report a profile or
-  review, and a report cannot be closed without a statement of reasons.
-- Session auth in a MongoDB store, Helmet, bcrypt, and a NoSQL-injection
-  sanitiser written for Express 5, where express-mongo-sanitize turns every
-  request with a query string into a 500.
-- A login rate limit that counts only failed attempts - the first version
-  limited the whole auth router and signed people out after five page loads.
-- API and frontend served by one Render service in Frankfurt, so the session
-  cookie stays first-party and login works in Safari.
+- Reviews only from a learner whose lesson the instructor confirmed and whose
+  date has passed. Moving a confirmed lesson sends it back for confirmation, so
+  a lesson cannot be moved into the past to unlock a review.
+- Each instructor's typical reply time: the median time to answer a lesson
+  request, with requests they ignore counted against them, so ignoring them
+  cannot make anyone look quick.
+- Photo uploads checked by their bytes rather than their name and re-encoded,
+  which strips the GPS location a phone writes into them; the 12-photo gallery
+  limit is one conditional update, so two uploads at once cannot both get past it.
+- EU Digital Services Act moderation: anyone can report content, no report
+  closes without a statement of reasons, the author of a hidden review is told
+  why, and the admin area counts the figures for the yearly transparency report.
+- Session auth in MongoDB, a strict CSP and a login rate limit that counts only
+  failed attempts - the first version signed people out after five page loads.
+  Integration tests run against a real MongoDB.
 
 ### [property-template](https://github.com/PeGoPaz/property-template)
 
@@ -80,6 +87,12 @@ for a similar property is set up by editing data files, not HTML.
 - CI tests, builds and deploys, and every six hours rebuilds with fresh
   availability without a commit; script and style links carry a content hash
   so a deploy never mixes old and new files.
+- Works from the keyboard and with a screen reader: the booking calendar is one
+  tab stop with arrow keys between days, the gallery says which photo is shown,
+  and a form error is tied to the field it is about.
+- A strict content security policy with no inline styles, sent as headers and
+  repeated in a `<meta>` tag for GitHub Pages, which ignores headers; a test
+  fails if the two copies drift apart.
 
 ## Toolbox
 
@@ -89,7 +102,7 @@ for a similar property is set up by editing data files, not HTML.
   Frontend ....... React, Vite, React Router, Context API, axios
   Databases ...... MongoDB, PostgreSQL, MySQL
   ML / GPU ....... PyTorch, Transformers, PEFT/LoRA, QLoRA, mixed precision, NVML
-  Testing ........ pytest, Hypothesis, dependency stubbing, ASan/UBSan/TSan
+  Testing ........ pytest, Hypothesis, node:test, MongoDB integration tests, ASan/UBSan/TSan
   Quality ........ ruff, strict mypy, coverage floors, pinned tooling, GitHub Actions
   Systems ........ Linux, Docker, Prometheus, Grafana, SSH, shell scripting
 </pre>
