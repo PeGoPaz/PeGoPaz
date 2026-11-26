@@ -7,7 +7,7 @@ __   ___      _   ___ ___ __  __ ___ ___   ___    _   ___ _  _  _____   __
   Education .... BSc Computing, Griffith College Dublin - final year
   Location ..... Dublin, Ireland
   Focus ........ Backend engineering, Linux, developer tooling
-  Website ...... <a href="https://vladr.tech">vladr.tech</a>
+  Website ...... vladr.tech
 </pre>
 
 ## About
